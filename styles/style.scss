@@ -1,0 +1,153 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background: url(../images/bg-intro-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    background-color: $red;
+}
+main {
+    display: flex;
+    width: 80%;
+    margin: 5% 10% auto 10%;
+    align-items: center;
+    .text-sec {
+        width: 50%;
+        h1 {
+            color: #fff;
+            @include font(900,3vw);
+        }
+        p {
+            color: #fff;
+            @include font(500,15px);
+            width: 85%;
+            margin-top: 3%;
+        }
+    }
+    .form-sec {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        .offer-head {
+            padding: 15px 15px;
+            background: $darkBlue;
+            margin-bottom: 5%;
+            @include font(600,1vw);
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+            span {
+                font-weight: 100;
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            padding: 5% ;
+            border-radius: 5px;
+            input,button {
+                width: 80%;
+                margin: 2% 3% 2% 3%;
+                padding: 3% 5%;
+                border-radius: 5px;
+                border: 1px solid $grayishBlue;
+                @include font(700,13px);   
+            }
+            input:focus {
+                outline: 1px solid black;
+            }
+            .error {
+                @include font(400,0.9vw);
+                color: $red;
+                font-style: italic;
+                margin-left: 57%;
+                margin-bottom: 1.5%;
+                display: none;
+            }
+            input:focus:invalid + .error {
+                display: block;
+            }
+            button {
+                width: 90%;
+                cursor: pointer;
+                background: $green;
+                color: #fff;
+                font-size: 1vw;
+                text-align: center;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            }
+            button:hover{
+                opacity: .8;
+            }
+            p {
+                @include font(300,0.8vw);
+                color: $grayishBlue;
+                text-align: center;
+                margin-bottom: 3%;
+                a {
+                    color: $red;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:700px){
+    body {
+        background: url(../images/bg-intro-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-color: $red;
+        main {
+            flex-direction: column;
+            text-align: center;
+            .text-sec {
+                width: 100%;
+                h1 {
+                    width: 80%;
+                    margin: 5% 10%;
+                    font-size: 5vw;
+                }
+                p {
+                    width: 90%;
+                    margin: auto 5%;
+                }
+            }
+            .form-sec {
+                width: 100%;
+                margin-bottom: 20%;
+                .offer-head {
+                    margin-top: 15%;
+                    font-size: 5vw;
+                    padding: 15px 40px;
+                }
+                form {
+                    input,button {
+                        padding: 5% 5%;
+                    }
+                    .error {
+                        font-size: 2vw;
+                    }
+                    button {
+                        font-size: 3.5vw;
+                    }
+                    p {
+                        font-size: 3vw;
+                        width: 80%;
+                        margin: auto 10%; 
+                    }
+                }
+            }
+        }
+    }
+}
