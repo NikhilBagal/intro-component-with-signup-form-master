@@ -17,11 +17,13 @@ main {
     width: 80%;
     margin: 5% 10% auto 10%;
     align-items: center;
+    justify-content: space-between;
     .text-sec {
         width: 50%;
         h1 {
             color: #fff;
             @include font(900,3vw);
+            width: 80%;
         }
         p {
             color: #fff;
