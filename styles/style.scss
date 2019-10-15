@@ -73,9 +73,12 @@ main {
                 margin-bottom: 1.5%;
                 display: none;
             }
-            input:focus:invalid + .error {
+            .error.active {
                 display: block;
             }
+          /*  input:focus:invalid + .error {
+                display: block;
+            }*/
             button {
                 width: 90%;
                 cursor: pointer;

@@ -85,6 +85,9 @@ main .form-sec form {
   background: #fff;
   padding: 5%;
   border-radius: 5px;
+  /*  input:focus:invalid + .error {
+                display: block;
+            }*/
 }
 
 main .form-sec form input, main .form-sec form button {
@@ -113,7 +116,7 @@ main .form-sec form .error {
   display: none;
 }
 
-main .form-sec form input:focus:invalid + .error {
+main .form-sec form .error.active {
   display: block;
 }
 
