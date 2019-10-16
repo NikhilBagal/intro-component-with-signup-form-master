@@ -19,11 +19,14 @@
                 <form>
                     <input type="text" id="name-input" placeholder="First Name" onchange="init()" required>
                     <span class="error" id="name-input-error">first name cannot be empty</span>
+                    <span class="error" id="name-input-format-error">only letters are allowed</span>
                     <input type="text" id="Last-name-input" placeholder="Last Name" onchange="init()" required>
                     <span class="error" id="Last-name-input-error">last name cannot be empty</span>
+                    <span class="error" id="Last-name-input-format-error">only letters are allowed</span>
                     <input type="email" id="mail-input" placeholder="Email Address" onchange="init()" required>
-                    <span class="error" id="mail-input-error">Looks like this is not an email</span>
-                    <input type="password" id="pass-input" placeholder="Password" onchange="init()" autocomplete="
+                    <span class="error" id="mail-input-error">Email cannot be empty</span>
+                    <span class="error" id="mail-input-format-error">Looks like this is not an email</span>
+                    <input type="password" id="pass-input" placeholder="Password"  autocomplete="
                     current-password" required>
                     <span class="error" id="pass-input-error">password cannot be empty</span>
                     <button type="submit" value="Claim Your Free Trial" >Claim Your Free Trial</button>
