@@ -17,16 +17,16 @@
             <section class="form-sec">
                 <p class="offer-head">Try it free 7 days <span>then $20/mo. thereafter</span></p>
                 <form>
-                    <input type="text" id="name-input" placeholder="First Name" onchange="init()" name="first-name" required>
+                    <input type="text" id="name-input" placeholder="First Name" onchange="init()" aria-label="first-name" required>
                     <span class="error" id="name-input-error">first name cannot be empty</span>
                     <span class="error" id="name-input-format-error">only letters are allowed</span>
-                    <input type="text" id="Last-name-input" placeholder="Last Name" onchange="init()" name="last-name" required>
+                    <input type="text" id="Last-name-input" placeholder="Last Name" onchange="init()" aria-label="last-name" required>
                     <span class="error" id="Last-name-input-error">last name cannot be empty</span>
                     <span class="error" id="Last-name-input-format-error">only letters are allowed</span>
-                    <input type="email" id="mail-input" placeholder="Email Address" onchange="init()" name="email" required>
+                    <input type="email" id="mail-input" placeholder="Email Address" onchange="init()" aria-label="email" required>
                     <span class="error" id="mail-input-error">Email cannot be empty</span>
                     <span class="error" id="mail-input-format-error">Looks like this is not an email</span>
-                    <input type="password" id="pass-input" placeholder="Password" name="password" autocomplete="
+                    <input type="password" id="pass-input" placeholder="Password" aria-label="password" autocomplete="
                     current-password" required>
                     <span class="error" id="pass-input-error">password cannot be empty</span>
                     <button type="submit" value="Claim Your Free Trial" >Claim Your Free Trial</button>
