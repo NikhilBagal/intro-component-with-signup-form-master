@@ -111,8 +111,9 @@ main .form-sec form .error {
   font-size: 0.9vw;
   color: #ff7a7a;
   font-style: italic;
-  margin-left: 57%;
-  margin-bottom: 1.5%;
+  width: 80%;
+  text-align: right;
+  margin: auto 10% 1.5% 10%;
   display: none;
 }
 
